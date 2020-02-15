@@ -1,0 +1,11 @@
+body {
+  font-family: charter, ubuntu, Helvetica, Arial, STXihei, “华文细黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif
+}
+
+code {
+  font-family: "Fira Mono", Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
+}
+
+pre, code {
+  font-size: .95em;
+}

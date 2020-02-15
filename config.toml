@@ -1,0 +1,40 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Theorist"
+theme = "hugo-ivy"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+hasCJKLanguage = true
+
+[permalinks]
+    cn = "/cn/:year/:month/:slug/"
+	en = "/en/:year/:month/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Posts"
+    url = "/en/"
+    weight = 3
+[[menu.main]]
+    name = "博客"
+    url = "/cn/"
+    weight = 4
+
+[params]
+    footer = "&copy; Theorist 2011--2019"
+	GithubEdit = "https://github.com/AlbertLei/blog-theorist/blob/master/content/"
+ 
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml", "tex", "cpp", "haskell"]
+    highlightjsTheme = "github"
