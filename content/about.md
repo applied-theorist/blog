@@ -15,4 +15,4 @@ This is the place where I write and babble under the pen name _Theorist._ Specif
 
 - You can subscribe [via RSS](/index.xml). In case you want to contact me, comment at [the repo issus.](https://github.com/applied-theorist/blog/issues)  
 
-That's it. Happy reading. 
+That's it. Happy reading!
