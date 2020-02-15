@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<ul>
+  {{ range (where .Data.Pages "Section" "!=" "") }}
+  <p>
+    <span class="date">{{ .Date.Format "2006-01-02" }}</span> &nbsp;
+    <a href="{{ .URL }}">{{ .Title }}</a>
+  </p>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}

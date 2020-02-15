@@ -1,0 +1,86 @@
+---
+title: "Rmd Template"
+date: 2017-10-14
+tags: ["Rmd Template"]
+categories: ["Templates"]
+mathjax: true
+---
+
+
+
+<div id="benefits-of-.rmd-file" class="section level2">
+<h2>Benefits of <code>.Rmd</code> file</h2>
+<ol style="list-style-type: decimal">
+<li><p>Run R code. The outputs can be automatically included and labeled.</p>
+<p>This feature is also supported in <code>.Rmarkdown</code> file.</p></li>
+<li><p>Math supported by <a href="https://pandoc.org/">Pandoc</a> and <a href="https://www.mathjax.org/">MathJax</a>.</p>
+<p>Inline math: <span class="math inline">\(e^{i\pi} + 1 = 0\)</span> and display math:</p>
+<p><span class="math display">\[
+\mathcal{L}_T(\vec{\lambda}) = \sum_{(x,s)\in T} \log P(s|X) - \sum_{i=1}^m \lambda_i^2 + \tfrac{a^2 + b^2}{c^3} + \nabla h
+- \ll s,t \gg    
+\]</span></p></li>
+<li><p>Use <code>\begin{equation}</code> and reference.</p>
+<p><span class="math display" id="eq:euler">\[\begin{equation}
+e^{i\pi} + 1 = 0
+\tag{1}
+\end{equation}\]</span></p>
+<p>You can reference Equation <a href="#eq:euler">(1)</a>.</p></li>
+<li><p>Theorem, Definition, Lemma, and Proof environments</p>
+
+<div class="theorem">
+<span id="thm:foo" class="theorem"><strong>Theorem 1  </strong></span>Here is a theorem.
+</div>
+
+<div class="proof">
+ <span class="proof"><em>Proof. </em></span> Trivia.
+</div>
+<p>We can reference Theorem <a href="#thm:foo">1</a>. See <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems">bookdown</a> for more details.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Environment</th>
+<th>Label Prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>theorem</td>
+<td>thm</td>
+</tr>
+<tr class="even">
+<td>lemma</td>
+<td>lem</td>
+</tr>
+<tr class="odd">
+<td>corollary</td>
+<td>cor</td>
+</tr>
+<tr class="even">
+<td>proposition</td>
+<td>prp</td>
+</tr>
+<tr class="odd">
+<td>conjecture</td>
+<td>cnj</td>
+</tr>
+<tr class="even">
+<td>definition</td>
+<td>def</td>
+</tr>
+<tr class="odd">
+<td>example</td>
+<td>exm</td>
+</tr>
+<tr class="even">
+<td>exercise</td>
+<td>exr</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Syntax highlight works well with this blog template.</p></li>
+</ol>
+</div>
+<div id="cons-of-.rmd-file" class="section level2">
+<h2>Cons of <code>.Rmd</code> file</h2>
+<p>No to-do list. And the file outputs are not that clean as <code>.md</code> file.</p>
+</div>

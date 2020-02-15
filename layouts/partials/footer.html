@@ -1,0 +1,31 @@
+  <footer>
+  {{ partial "foot_custom.html" . }}
+  {{ partial "footer_highlightjs" . }}
+  {{ with .Site.Params.footer }}
+  
+  <hr>
+  {{ . | markdownify }}
+  {{ end }}
+  {{ if .IsPage }}
+  {{ if .File.Path }}
+    {{ $.Scratch.Set "FilePath" .File.Path }}
+    {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
+    {{ $Files := readDir (print "content/" .File.Dir) }}
+    {{ if (where $Files "Name" $RmdFile) }}
+      {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+    {{ else }}
+      {{ $RmdFile := (print .File.BaseFileName ".Rmarkdown") }}
+      {{ if (where $Files "Name" $RmdFile) }}
+        {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+      {{ end }}
+    {{ end }}
+    {{ with .Site.Params.GithubEdit}}
+    | <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}"> Edit this page on GitHub</a>
+    {{ end }}
+  {{ end }}
+  {{ end }}  
+  </footer>
+  </article>
+  {{ template "_internal/google_analytics.html" . }}
+  </body>
+</html>

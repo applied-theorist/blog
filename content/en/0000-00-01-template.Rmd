@@ -1,0 +1,62 @@
+---
+title: "Rmd Template"
+date: 2017-10-14
+tags: ["Rmd Template"]
+categories: ["Templates"]
+mathjax: true
+---
+
+## Benefits of `.Rmd` file
+
+1. Run R code. The outputs can be automatically included and labeled.
+
+    This feature is also supported in `.Rmarkdown` file.
+
+2. Math supported by [Pandoc](https://pandoc.org/) and [MathJax](https://www.mathjax.org/).
+
+   Inline math: $e^{i\pi} + 1 = 0$ and display math:
+   
+   $$
+   \mathcal{L}_T(\vec{\lambda}) = \sum_{(x,s)\in T} \log P(s|X) - \sum_{i=1}^m \lambda_i^2 + \tfrac{a^2 + b^2}{c^3} + \nabla h
+   - \ll s,t \gg    
+   $$
+   
+1. Use `\begin{equation}` and reference.
+
+   \begin{equation}
+   e^{i\pi} + 1 = 0
+   (\#eq:euler)
+   \end{equation}
+
+   You can reference Equation \@ref(eq:euler).
+
+1. Theorem, Definition, Lemma, and Proof environments
+
+   ```{theorem, label="foo"}
+   Here is a theorem.
+   ```
+   
+   ```{proof}
+   Trivia.
+   ```
+
+   We can reference Theorem \@ref(thm:foo). See [bookdown](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems) for more details.
+
+	| Environment | Label Prefix |     
+	| ------------| -------------|
+	| theorem     | thm          | 
+	| lemma       | lem       	 | 
+	| corollary   | cor          | 
+	| proposition | prp          |
+	| conjecture  | cnj          | 
+	| definition  | def          | 
+	| example     | exm          | 
+	| exercise    | exr          |
+
+1. Syntax highlight works well with this blog template.
+   
+## Cons of `.Rmd` file
+
+No to-do list. And the file outputs are not that clean as `.md` file.
+ 
+   
