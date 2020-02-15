@@ -31,8 +31,8 @@ hasCJKLanguage = true
     weight = 4
 
 [params]
-    footer = "&copy; Theorist 2011--2019"
-	GithubEdit = "https://github.com/AlbertLei/blog-theorist/blob/master/content/"
+    footer = "&copy; Theorist"
+	GithubEdit = "https://github.com/applied-theorist/blog/blob/master/content/"
  
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
