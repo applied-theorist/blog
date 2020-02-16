@@ -12,4 +12,4 @@ In building this site, I found the [blogdown book](https://bookdown.org/yihui/bl
 
 ## Why blog?
 
-I started to blog mainly inspired by other awesome bloggers, such as [Yihui](https://yihui.name/) and Terry Tao. Thanks to modern tools like Hugo, GitHub and Netlify, it is a breeze to make a static website to host articles. To write is to think. To think is to sharpen my old ideas, and generate new ideas during that process. I hope this website can force me to write and, more importantly, *think* more.
+I started to blog mainly inspired by other awesome bloggers, such as [Yihui](https://yihui.name/) and Terry Tao. Thanks to tools like Hugo, GitHub and Netlify, it is a breeze to make a static website to host articles. To write is to think. To think is to sharpen my old ideas, and generate new ideas during that process. I hope this website can force me to write and, more importantly, *think* more.
